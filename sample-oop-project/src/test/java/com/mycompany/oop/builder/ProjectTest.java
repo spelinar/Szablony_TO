@@ -41,7 +41,7 @@ public class ProjectTest {
     public void testGetId_0args() {
         System.out.println("getId");
         Project instance = null;
-        int expResult = 0;
+        int expResult = 2;
         int result = instance.getId();
         assertEquals(expResult, result);
         
@@ -51,7 +51,7 @@ public class ProjectTest {
     public void testGetProjectName() {
         System.out.println("getProjectName");
         Project instance = null;
-        String expResult = "";
+        String expResult = "builder";
         String result = instance.getProjectName();
         assertEquals(expResult, result);
      
@@ -62,7 +62,7 @@ public class ProjectTest {
     public void testGetSourceCode() {
         System.out.println("getSourceCode");
         Project instance = null;
-        String expResult = "";
+        String expResult = "costam";
         String result = instance.getSourceCode();
         assertEquals(expResult, result);
     }
@@ -84,6 +84,33 @@ public class ProjectTest {
         String expResult = "";
         String result = instance.toString();
         assertEquals(expResult, result);
+    }
+
+    @Test
+    public void testGetId_int() {
+        System.out.println("getId");
+        int id = 0;
+        Project instance = null;
+        instance.getId(id);
+        fail("The test case is a prototype.");
+    }
+
+    @Test
+    public void testSetProjectName() {
+        System.out.println("setProjectName");
+        String projektName = "";
+        Project instance = null;
+        instance.setProjectName(projektName);
+        fail("The test case is a prototype.");
+    }
+
+    @Test
+    public void testSetSourceCode() {
+        System.out.println("setSourceCode");
+        String sourceCode = "";
+        Project instance = null;
+        instance.setSourceCode(sourceCode);
+        fail("The test case is a prototype.");
     }
     
 }
