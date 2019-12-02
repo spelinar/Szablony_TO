@@ -3,16 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.oop.abstractfactory;
+package com.mycompany.oop.composit;
 
 /**
  *
  * @author 4
  */
-public interface AbstractFactory {
+public class Leaf extends Component {
 
-  AbstractProductA createProductA();
+  void operation() {
 
-  AbstractProductB createProductB();
+  }
     
 }
