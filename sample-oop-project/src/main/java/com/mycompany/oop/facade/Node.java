@@ -3,16 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.oop.composit;
+package com.mycompany.oop.facade;
 
 /**
  *
  * @author 4
  */
-public class Leaf extends Component {
-
-  void operation() {
-
-  }
+public class Node {
     
 }

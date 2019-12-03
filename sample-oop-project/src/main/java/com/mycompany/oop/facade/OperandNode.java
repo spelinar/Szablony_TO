@@ -3,15 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.oop.composit;
+package com.mycompany.oop.facade;
 
 /**
  *
  * @author 4
  */
-abstract class Component {
+public class OperandNode extends Node {
 
-  abstract void operation(); {
+  private int value;
+
+  public int getValue() {
+    return value;
+  }
+
+  public void setValue(int value) {
+    this.value = value;
+  }
     
-}
 }
