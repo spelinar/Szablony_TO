@@ -3,12 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.oop.factorymethod;
+package com.mycompany.oop.flyweight;
 
 /**
  *
  * @author 4
  */
-public class ConcreteProductB implements Product {
-    
+
+    public interface Flyweight {
+
+  void operation(Object extrinsicState);
 }
