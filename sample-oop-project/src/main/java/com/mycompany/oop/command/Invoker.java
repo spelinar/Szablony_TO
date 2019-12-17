@@ -3,16 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.oop.abstractfactory;
+package com.mycompany.oop.command;
 
 /**
  *
  * @author 4
  */
-public interface AbstractFactory {
+public class Invoker {
 
-  AbstractProductA createProductA();
+  private final Command command;
 
-  AbstractProductB createProductB();
-    
+  public Invoker(Command command) {
+    this.command = command;
+  }
+
+  public void execute() {
+    command.execute();
+  }
 }
